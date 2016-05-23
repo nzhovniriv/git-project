@@ -1,0 +1,17 @@
+Install PHPUnit
+Download:
+wget https://phar.phpunit.de/phpunit.phar
+Make executable:
+chmod +x phpunit.phar
+Move globally:
+sudo mv phpunit.phar /usr/local/bin/phpunit
+Test
+phpunit --version
+Optionally, if you want to verify the signature, between steps #1 and #2:
+
+Download signature file
+wget https://phar.phpunit.de/phpunit.phar.asc
+Add the public key to our local file:
+gpg --keyserver pgp.uni-mainz.de --recv-keys 0x4AA394086372C20A
+Verify:
+gpg phpunit.phar.asc
