@@ -1,1 +1,2 @@
 publisher master
+publisher create_publisher
