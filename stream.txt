@@ -1,1 +1,2 @@
 stream master
+stream create_stream
